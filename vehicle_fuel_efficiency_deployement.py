@@ -12,8 +12,8 @@ import pandas as pd
 import joblib
 
 # Load model and encoder
-model = joblib.load("vehicle_model.pkl")
-encoder = joblib.load("vehicle_label_encoder.pkl")
+model = joblib.load("vehicle_fuel_efficiency_model.pkl")
+encoder = joblib.load("label_encoder_vehicle.pkl")
 
 st.set_page_config(page_title="Vehicle Fuel Efficiency", page_icon="🚗")
 
