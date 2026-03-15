@@ -39,8 +39,8 @@ with col2:
 origin_map = {"USA": 1, "Europe": 2, "Japan": 3}
 origin_value = origin_map[origin]
 
-# Car name dropdown from encoder classes
-car_name = st.selectbox("Car Name", encoder.classes_)
+car_list = ["ford", "chevrolet", "toyota", "honda", "bmw", "audi"]
+car_name = st.selectbox("Car Name", car_list)
 car_name_encoded = encoder.transform([car_name])[0]
 
 # Create dataframe
